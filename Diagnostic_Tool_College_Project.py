@@ -11,11 +11,14 @@ def mainFunc():
         if websiteSynonyms[x] in error and "load" in error:
             q1 = (input("Are you connected to the wifi\n")).lower()
             if q1 == "yes":
-                q2a = (input("Have you tried multiple websites")).lower()
+                q2a = (input("Have you tried multiple websites\n")).lower()
                 if q2a == "yes":
-                    q3a = input("Does your network icon show any issues (E.G No Internet Connection)")
+                    q3a = (input("Does your network icon show any issues (E.G No Internet Connection)\n")).lower()
+                    if q3a == "yes":
+                        print("Restart your device's wifi connection\n")
+                        q4a = input("Did that work?\n")
                 if q2a == "no":
-                    print("Try multiple websites")
+                    print("Try multiple websites\n")
             if q1 == "no":
                 q2b = (input("Do you use ethernet (A cable connects your computer to the router\n)")).lower()
                 if q2b == "yes":
